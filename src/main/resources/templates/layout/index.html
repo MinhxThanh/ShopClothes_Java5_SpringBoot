@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:fragment="dynamic(main)">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--    bootstrap-->
+    <link rel="stylesheet" type="text/css" href="/assets/style/A.vendor,,_bootstrap,,_css,,_bootstrap.min.css+fonts,,_font-.css">
+<!--    font-awsome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--    magic zoom-->
+    <link type="text/css" rel="stylesheet" href="/assets/style/magiczoomplus.css"/>
+    <script type="text/javascript" src="/assets/js/magiczoomplus.js"></script>
+<!--    angularJS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="/assets/js/shopping-cart-app.js"></script>
+<!--    jquery-->
+    <script src="/assets/js/jquery-3.2.1.min.js"></script>
+</head>
+
+<body class="animsition" data-new-gr-c-s-check-loaded="8.904.0" data-gr-ext-installed=""
+      style="animation-duration: 1500ms; opacity: 1;" ng-app="shopping-cart-app" ng-controller="shopping-cart-controller">
+<!--    menu-->
+    <div th:replace="~{/layout/_menu::navbar}"></div>
+
+<!--    main-->
+    <div th:replace="${main}"></div>
+
+<!--footer-->
+    <div th:replace="~{/layout/_footer::footer}"></div>
+
+<div class="btn-back-to-top" id="myBtn" style="display: none;">
+		<span class="symbol-btn-back-to-top">
+			<i class="fa-solid fa-chevron-up"></i>
+		</span>
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="/assets/js/animsition,_js,_animsition.min.js+bootstrap,_js,_popper.js.pa.js"></script>
+
+<script>
+    eval(mod_pagespeed_8JawVzd5Oy);
+</script>
+
+<script src="/assets/js/bootstrap.min.js"></script>
+
+<script src="/assets/js/main.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
